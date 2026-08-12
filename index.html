@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>G&amp;P Swimming Pools - Digital Presence Audit</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel2:#1c2330; --ink:#e6edf3; --mut:#9aa7b4;
+    --line:#2a3340; --accent:#2f81f7; --good:#3fb950; --ok:#bb8009; --warn:#d29922;
+    --bad:#f85149; --gradF:#f85149; --gradD:#e8702a; --gradC:#d29922; --gradB:#3fb950; --gradA:#2ea043;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+  header{padding:46px 0 28px;border-bottom:1px solid var(--line);
+    background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+  h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+  .sub{color:var(--mut);font-size:15px}
+  .hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+  @media(max-width:760px){.hero{grid-template-columns:1fr}}
+  .gradecard{background:linear-gradient(160deg,#2a1410,#1c2330);border:1px solid var(--line);
+    border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+  .gradecard:before{content:"";position:absolute;inset:0;
+    background:radial-gradient(300px 160px at 50% 0,rgba(232,112,42,.22),transparent)}
+  .bigletter{font-size:96px;font-weight:900;line-height:1;color:var(--gradD);position:relative;
+    text-shadow:0 0 40px rgba(232,112,42,.45)}
+  .score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+  .heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+  .heroread p{color:var(--mut);font-size:15.5px}
+  .heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);
+    border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+  section{padding:34px 0;border-bottom:1px solid var(--line)}
+  .h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;
+    display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+  .rname{font-weight:600;font-size:15px}
+  .bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+  .fill{height:100%;border-radius:99px}
+  .badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;
+    display:flex;align-items:center;justify-content:center;color:#0d1117}
+  .gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}
+  .gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+  .sc{font-size:12px;color:var(--mut);margin-top:3px}
+  .opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:760px){.opp{grid-template-columns:1fr}}
+  .ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+  .ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+  .ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+  .ocard .small{font-size:13px;color:var(--mut)}
+  .oppnote{color:var(--mut);font-size:14px;margin-top:14px}
+  .arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+  .pill{font-size:60px;font-weight:900;line-height:1}
+  .pill.from{color:var(--gradD)} .pill.to{color:var(--gradA)}
+  .pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+  .ar{font-size:34px;color:var(--mut)}
+  ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media(max-width:760px){ul.road{grid-template-columns:1fr}}
+  ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:8px;padding:11px 14px;font-size:14.5px}
+  .road2 li{border-left-color:var(--good)}
+  .cta{text-align:center;padding:40px 0 56px}
+  .cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+  .cta p{color:var(--mut);font-size:15px}
+  footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Digital Presence Audit</div>
+    <h1>G&amp;P Swimming Pools</h1>
+    <div class="sub">Addlestone, Surrey &nbsp;·&nbsp; Website, Local SEO, Conversion, Reputation &amp; Enquiry Quality</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="gradecard">
+      <div class="eyebrow" style="position:relative">Overall Grade</div>
+      <div class="bigletter">D+</div>
+      <div class="score100">46 / 100</div>
+    </div>
+    <div class="heroread">
+      <h2>Forty years of trust. A site that looks half-built.</h2>
+      <p>Forty years in bespoke pools is a genuinely rare claim, and recognised supplier names on the page back it up. But the site itself has literal placeholder text still live: "Slide title," "Write your caption here," generic "Button" labels in the carousel. There are no reviews shown anywhere, no trade accreditation badge, and no way to tell a serious enquiry from a browser. For a business that says it gets plenty of enquiries but only wants the right ones, the site currently has no way to tell the difference.</p>
+      <span class="tag">Real heritage &nbsp;•&nbsp; Unfinished build &nbsp;•&nbsp; No enquiry filter</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="h">The Scorecard - 12 Categories</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">Brand &amp; Domain Architecture</div><div class="bar"><div class="fill" style="width:52%;background:var(--gradC)"></div></div><div class="sc">Own domain; two email formats seen (info@gandppools.com vs the .com domain)</div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Website Design &amp; UX</div><div class="bar"><div class="fill" style="width:35%;background:var(--gradD)"></div></div><div class="sc">Mid-2010s site builder; literal placeholder text still live on the page</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Mobile Experience</div><div class="bar"><div class="fill" style="width:48%;background:var(--gradC)"></div></div><div class="sc">Responsive but dated; not built to convert on a phone</div></div><div class="badge gC">C-</div></div>
+      <div class="row"><div><div class="rname">Site Speed &amp; Technical</div><div class="bar"><div class="fill" style="width:45%;background:var(--gradC)"></div></div><div class="sc">Schema present, but a heavy, old-builder page</div></div><div class="badge gC">C-</div></div>
+      <div class="row"><div><div class="rname">On-Page SEO</div><div class="bar"><div class="fill" style="width:40%;background:var(--gradD)"></div></div><div class="sc">Title and meta exist; no location pages for eight served counties</div></div><div class="badge gD">D+</div></div>
+      <div class="row"><div><div class="rname">Local SEO &amp; Google Profile</div><div class="bar"><div class="fill" style="width:38%;background:var(--gradD)"></div></div><div class="sc">Yell has a strong 5.0 rating - nothing similar visible on Google</div></div><div class="badge gD">D+</div></div>
+      <div class="row"><div><div class="rname">Conversion &amp; Lead Capture</div><div class="bar"><div class="fill" style="width:25%;background:var(--gradF)"></div></div><div class="sc">Contact page only, no qualifying questions to filter serious buyers</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Speed-to-Lead &amp; Follow-up</div><div class="bar"><div class="fill" style="width:30%;background:var(--gradD)"></div></div><div class="sc">One inbox, one mobile - no visible system behind either</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Content &amp; Authority</div><div class="bar"><div class="fill" style="width:42%;background:var(--gradD)"></div></div><div class="sc">Real supplier brand names (Certikin, Astralpool); no accreditation badge shown</div></div><div class="badge gD">D+</div></div>
+      <div class="row"><div><div class="rname">Reviews &amp; Reputation</div><div class="bar"><div class="fill" style="width:48%;background:var(--gradC)"></div></div><div class="sc">Genuinely strong on Yell and Houzz - none of it surfaced on the site itself</div></div><div class="badge gC">C-</div></div>
+      <div class="row"><div><div class="rname">Social Media Presence</div><div class="bar"><div class="fill" style="width:35%;background:var(--gradD)"></div></div><div class="sc">Facebook, Twitter and Vimeo linked; no visible recent activity</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Tracking &amp; Ads Readiness</div><div class="bar"><div class="fill" style="width:48%;background:var(--gradC)"></div></div><div class="sc">Google Tag Manager is installed - a real foundation to build on</div></div><div class="badge gC">C-</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What the Numbers Say Today</div>
+    <div class="opp">
+      <div class="ocard"><div class="lab">Years in bespoke pools</div><div class="big">40+</div><div class="small">a genuine, rare claim in this trade</div></div>
+      <div class="ocard"><div class="lab">Qualifying questions on the enquiry form</div><div class="big">0</div><div class="small">every enquiry looks the same until you call them</div></div>
+      <div class="ocard"><div class="lab">Reviews shown on the site itself</div><div class="big">0</div><div class="small">despite a genuinely strong 5.0 record elsewhere</div></div>
+    </div>
+    <p class="oppnote">The stated problem is not too few enquiries, it is too many of the wrong kind. Without a form that asks budget, timeline, and project type before someone reaches the phone, every enquiry costs the same amount of time to qualify by hand, tyre-kickers and real buyers alike. The fix here is a filter, not more traffic, and it is one of the cheapest things on this whole page to build.</p>
+  </section>
+
+  <section>
+    <div class="h">Projected Grade After Build</div>
+    <div class="arrow">
+      <div><div class="pill from">D+</div><div class="pilllab">Today · 46/100</div></div>
+      <div class="ar">→</div>
+      <div><div class="pill to">A-</div><div class="pilllab">After build · 86-88/100</div></div>
+    </div>
+    <p class="oppnote" style="text-align:center">Forty years of reputation already exists. Filtering the enquiries that already arrive is the fast, low-cost win here.</p>
+  </section>
+
+  <section>
+    <div class="h">Priority Roadmap - Fix First</div>
+    <ul class="road">
+      <li>Remove the placeholder text and generic button labels site-wide</li>
+      <li>A real enquiry form with qualifying questions: project type, budget range, timeline</li>
+      <li>Show the Yell and Houzz reviews on the site itself, not just third-party pages</li>
+      <li>Instant reply on every enquiry, so a serious buyer never waits to hear back</li>
+    </ul>
+    <div class="h" style="margin-top:24px">Build Next - Compounding Growth</div>
+    <ul class="road road2">
+      <li>Trade accreditation displayed clearly if held, or pursued if not, buyers at this price point look for it</li>
+      <li>Service-area pages across the eight counties already claimed</li>
+      <li>A simple review-request step added to the servicing and aftercare side of the business</li>
+      <li>Tracking already exists (GTM) - wire it up before spending anything on ads</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <h2>Forty years of proof. A form that cannot tell who is serious.</h2>
+    <p>The fastest fix here is not more enquiries. It is knowing which ones are worth the call.</p>
+  </div>
+
+</div>
+
+<footer>Prepared by Andrei Givero · AG Consulting &nbsp;|&nbsp; andrei170.github.io/ag1</footer>
+</body>
+</html>
